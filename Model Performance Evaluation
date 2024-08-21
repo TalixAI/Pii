@@ -1,0 +1,9 @@
+# utils/metrics.py
+
+def accuracy(predictions, targets):
+    correct = (predictions == targets).sum().item()
+    total = len(targets)
+    return correct / total
+
+def mean_squared_error(predictions, targets):
+    return ((predictions - targets) ** 2).mean()
