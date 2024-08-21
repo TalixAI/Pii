@@ -1,0 +1,26 @@
+# models/pi_model.py
+
+from .base_model.py import BaseModel
+
+class PiModel(BaseModel):
+    def __init__(self, alpha=0.01):
+        super().__init__()
+        self.alpha = alpha  # Learning rate or some other parameter
+
+    def train(self, data):
+        # Implement the training logic
+        print("Training Pi model with data...")
+        # Example: Simple iteration
+        for epoch in range(100):  # Placeholder loop
+            loss = self._compute_loss(data)
+            print(f"Epoch {epoch}: Loss = {loss}")
+        print("Training complete.")
+
+    def predict(self, input_data):
+        # Implement the prediction logic
+        print("Predicting with Pi model...")
+        return input_data * self.alpha  # Example operation
+
+    def _compute_loss(self, data):
+        # Placeholder for loss computation logic
+        return 0.0  # Example: Return a fixed loss
