@@ -1,0 +1,28 @@
+# main.py
+
+from data.data_loader import DataLoader
+from data.preprocess import Preprocessor
+from models.pi_model import PiModel
+from utils.metrics import accuracy
+
+def main():
+    # Load data
+    data_loader = DataLoader('path/to/your/data.csv')
+    data = data_loader.load_data()
+
+    # Preprocess data
+    preprocessor = Preprocessor(data)
+    data = preprocessor.clean_data()
+    data = preprocessor.normalize_data()
+
+    # Initialize and train the model
+    pi_model = PiModel(alpha=0.05)
+    pi_model.train(data)
+
+    # Predict and evaluate
+    predictions = pi_model.predict(data)
+    acc = accuracy(predictions, data['target_column'])
+    print(f"Model Accuracy: {acc:.2f}")
+
+if __name__ == "__main__":
+    main()
