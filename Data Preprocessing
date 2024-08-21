@@ -1,0 +1,15 @@
+# data/preprocess.py
+
+class Preprocessor:
+    def __init__(self, data):
+        self.data = data
+    
+    def clean_data(self):
+        # Example: Drop null values
+        self.data.dropna(inplace=True)
+        return self.data
+
+    def normalize_data(self):
+        # Example: Normalize numerical data
+        self.data = (self.data - self.data.mean()) / self.data.std()
+        return self.data
