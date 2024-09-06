@@ -16,7 +16,7 @@ Pii is a component of an advanced AI architecture called Elo 4 that builds on th
 - AGI Potential: A step towards general-purpose AI with highly specialized and interconnected models.
 
 ## The Pii Model
-Pii is the mathematical model that lies at the heart of the Elo Systems. It offers groundbreaking capabilities in the following areas:
+Pii is a mathematical model that lies at the heart of the more advanced Elo Systems. It offers groundbreaking capabilities in the following areas:
 
 - Data Integrity: Pii enhances the quality of AI outputs by filtering and refining input data, reducing the risk of inaccuracies.
 - Algorithm Optimization: Pii introduces novel algorithms that improve computational efficiency and model accuracy.
