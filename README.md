@@ -10,7 +10,7 @@ This will lead to lower quality outputs in the near future or even worse complet
 
 That's why we're introducing Pii, a mathematical language model that can create quality datasets from pure math. 
 
-We've provided a foundation to prevent this inevitable problem and with your contributions set the stage for a breakthrough in artificial intelligence discovery
+We've provided a foundation to prevent this inevitable problem and with your contributions set the stage for an exponential scale in artificial intelligence discovery
 
 
 ## About Pii
