@@ -8,15 +8,15 @@ That's why we're introducing Pii, a mathematical language model that can create 
 
 
 ## About Pii
-Pii is a component of an advanced AI architecture called Elo 4 that builds on the foundations of short program generalization, offering a more refined, efficient, and scalable platform for AI development. Key features include:
+Pii is a breakthrough component which can be used in every iteration of the Elo systems and aims towards short program generalization, offering a more refined, efficient, and scalable platform for AI development. Key features include:
 
-- Modular Architecture: A flexible system that allows for the integration and development of specialized AI models.
-- Energy Efficiency: Reduced power consumption by utilizing specialized algorithms and Pii
-- Scalability: Capable of scaling across various domains with minimal resource overhead.
-- AGI Potential: A step towards general-purpose AI with highly specialized and interconnected models.
+- Modular Architecture: Pii creates a flexible system that allows for the integration and development of new datasets without complete system reconfiguration.
+- Energy Efficiency: Pii allows for reduced power consumption by utilizing specialized algorithms
+- Scalability: Pii is capable of scaling across various domains with minimal resource overhead.
+- AGI Potential: Pii propels us towards advanced general intelligence due to the connections in natural language and reasoning ability it is able to produce.
 
 ## The Pii Model
-Pii is a mathematical model that lies at the heart of the more advanced Elo Systems. It offers groundbreaking capabilities in the following areas:
+Pii is a mathematical model that lies at the heart of the Elo Systems. It offers groundbreaking capabilities in the following areas:
 
 - Data Integrity: Pii enhances the quality of AI outputs by filtering and refining input data, reducing the risk of inaccuracies.
 - Algorithm Optimization: Pii introduces novel algorithms that improve computational efficiency and model accuracy.
