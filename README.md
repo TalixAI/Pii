@@ -2,7 +2,11 @@
 A mathematical language model that creates datasets from pure math
 # Pii: Creating Higher Quality Data For LLM's
 
-There's a looming problem ahead with the rapid adoption of large language models in mainstream industries. Human generated data is required for these language models to exist and improve. We unfortunately have hit the peak of authentic data ingestion due to essentially the entire internet being scraped for use into these mainstream models. This will lead to lower quality outputs in the near future or even worse complete model collapse if not prevented in a sufficient manner. 
+There's a looming problem ahead with the rapid adoption of large language models in mainstream industries. Human generated data is required for these language models to exist and improve. 
+
+We unfortunately have hit the peak of authentic data ingestion due to essentially the entire internet being scraped for use into these mainstream models. 
+
+This will lead to lower quality outputs in the near future or even worse complete model collapse if not prevented in a sufficient manner. 
 
 That's why we're introducing Pii, a mathematical language model that can create quality datasets from pure math. 
 
