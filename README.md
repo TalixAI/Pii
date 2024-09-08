@@ -3,7 +3,7 @@ A mathematical language model that creates datasets from pure math
 
 ## Pii: v1.0 (Legal Model)
 
-The mathematical model **Pii** is a highly specialized tool designed to generate language purely from advanced mathematical principles, without relying on traditional datasets. It is used in the advanced version of the Elo Series but outside of these specific architectures, **Pii** can have a wide range of applications across various fields. Here are some potential use cases:
+The mathematical model **Pii** is a highly specialized tool designed to generate language purely from advanced mathematical principles, without relying on traditional datasets. It is intended to be used in the advanced versions of the Elo Series but outside of these specific architectures, **Pii** can have a wide range of applications across various fields. Here are some potential use cases:
 
 ### 1. **Scientific Research and Simulation**
    - **Use Case**: **Pii** can be employed in scientific research to generate complex simulations, particularly where traditional models fall short or where the phenomena being modeled have not been fully captured by existing data.
