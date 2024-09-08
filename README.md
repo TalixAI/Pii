@@ -1,7 +1,7 @@
 # Pii
 A mathematical language model that creates datasets from pure math
 
-# Pii: v1.0 (Legal Model)
+## Pii: v1.0 (Legal Model)
 
 There's a looming problem ahead with the rapid adoption of large language models in mainstream industries. Human generated data is required for these language models to exist and improve. 
 
