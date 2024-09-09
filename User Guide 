@@ -99,7 +99,7 @@ Pii is an advanced AI-powered platform designed to assist legal professionals wi
    Open your terminal and clone the Pii repository from GitHub:
 
    ```bash
-   git clone https://github.com/yourusername/pii.git
+   git clone https://github.com/talix-ai/pii.git
    cd pii
    ```
 
@@ -305,4 +305,51 @@ Pii 2.0 will extend the capabilities of the current Pii platform to support rese
    - Introduce machine learning algorithms that suggest related documents and studies based on user activity and document content.
 
 3. **Integration with Research Databases:**
-   - Seamless integration with popular research databases like PubMed, IEEE Xplore, and arXiv for direct
+   - Seamless integration with popular research databases like PubMed, IEEE Xplore, and arXiv for direct access to a vast array of research papers and articles. This integration will allow users to search and retrieve documents directly from these databases, significantly enhancing the research capabilities of Pii 2.0.
+
+### **Integration with Existing Systems**
+
+1. **Compatibility with Legal Management Systems:**
+   - Pii 2.0 will be designed to integrate smoothly with existing legal management software, making it easier for law firms and corporate legal departments to adopt the system without overhauling their current infrastructure.
+
+2. **Interoperability with Other AI Systems:**
+   - Pii 2.0 will be developed with interoperability in mind, allowing it to interact with other AI-based systems for tasks like predictive analytics, risk assessment, and legal forecasting.
+
+3. **API Extensions:**
+   - The API for Pii 2.0 will be extended to support additional endpoints for more granular control over document processing and retrieval, enabling developers to build custom applications on top of the Pii platform.
+
+---
+
+## **9. Support and Resources**
+
+### **FAQs**
+
+- **Q: What types of legal documents can Pii handle?**
+  - A: Pii is designed to process a wide range of legal documents, including contracts, case law, statutes, and legal briefs.
+
+- **Q: How does Pii ensure the security of my documents?**
+  - A: Pii uses encryption for data in transit and at rest, along with secure authentication mechanisms to protect your documents.
+
+- **Q: Can I customize the NLP models used by Pii?**
+  - A: Yes, Pii's models are fully customizable. You can fine-tune them with your own datasets to improve performance on specific tasks.
+
+- **Q: How do I back up my Pii database?**
+  - A: You can use PostgreSQL's built-in backup tools to create regular backups of your Pii database. Detailed instructions are available in the "Database Integration" section of this guide.
+
+### **Contact Information**
+
+For technical support or further assistance, please contact:
+
+- **Email:** kenhanson27@gmail.com
+
+### **Community and Contributions**
+
+- **GitHub Repository:** [Pii GitHub](https://github.com/talix-ai/pii)
+- **Community Forum:** Join our [discussion forum](https://community.pii.com) to connect with other users and developers.
+- **Contributions:** We welcome contributions to Pii! Please refer to our [contributing guide](https://github.com/yourusername/pii/contributing.md) on GitHub for more details.
+
+---
+
+**End of Pii User Guide**
+
+With this comprehensive guide, you now have all the information needed to install, configure, and use Pii effectively, along with a look ahead at the exciting features planned for Pii 2.0. Whether you’re in the legal profession or involved in research, Pii offers powerful tools to streamline your work and enhance productivity.
