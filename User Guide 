@@ -1,0 +1,308 @@
+# **Pii User Guide**
+
+---
+
+## **Table of Contents**
+
+1. **Introduction**
+   - Overview of Pii
+   - Key Features
+
+2. **System Requirements**
+   - Hardware Requirements
+   - Software Requirements
+
+3. **Installation Guide**
+   - Setting Up the Environment
+   - Installing Pii
+
+4. **Getting Started**
+   - Initial Configuration
+   - Running the Application
+
+5. **Using Pii**
+   - Overview of Functions
+   - Adding Legal Documents
+   - Searching Legal Documents
+   - Generating Summaries
+   - Interfacing with the API
+
+6. **Advanced Features**
+   - Customizing the Model
+   - Database Integration
+   - Using Docker for Deployment
+
+7. **Troubleshooting**
+   - Common Issues
+   - Debugging Tips
+
+8. **Future Plans: Pii 2.0**
+   - Research-Oriented Features
+   - Planned Enhancements
+   - Integration with Existing Systems
+
+9. **Support and Resources**
+   - FAQs
+   - Contact Information
+   - Community and Contributions
+
+---
+
+## **1. Introduction**
+
+### **Overview of Pii**
+
+Pii is an advanced AI-powered platform designed to assist legal professionals with document management, analysis, and synthesis. Leveraging cutting-edge natural language processing (NLP) models, Pii enables users to efficiently handle large volumes of legal text, including case law, statutes, contracts, and more. Its capabilities include searching, summarizing, and analyzing legal documents with high precision.
+
+### **Key Features**
+
+- **Text Summarization:** Generate concise summaries of lengthy legal documents.
+- **Advanced Search:** Perform keyword-based searches across large datasets.
+- **Natural Language Understanding:** Utilize NLP models to interpret and analyze legal text.
+- **Database Integration:** Seamlessly store and retrieve legal documents using PostgreSQL.
+- **Scalable Deployment:** Containerized with Docker for easy deployment on cloud platforms like AWS.
+
+---
+
+## **2. System Requirements**
+
+### **Hardware Requirements**
+
+- **Processor:** Quad-core CPU (Intel or AMD)
+- **Memory:** 16 GB RAM or higher
+- **Storage:** SSD with at least 100 GB of free space
+- **Network:** Broadband internet connection
+
+### **Software Requirements**
+
+- **Operating System:** Linux (Ubuntu 18.04+), macOS, or Windows 10/11
+- **Python:** Version 3.8 or higher
+- **Docker:** Version 20.10 or higher
+- **PostgreSQL:** Version 12 or higher
+
+---
+
+## **3. Installation Guide**
+
+### **Setting Up the Environment**
+
+1. **Install Python:** Ensure you have Python 3.8+ installed on your system. You can download it from the official Python website.
+
+2. **Install Docker:** Download and install Docker from the official Docker website. Docker is necessary for containerizing and deploying Pii.
+
+3. **Install PostgreSQL:** If you plan to use the database integration feature, install PostgreSQL. You can do this via package managers like apt for Ubuntu or Homebrew for macOS.
+
+### **Installing Pii**
+
+1. **Clone the Repository:**
+
+   Open your terminal and clone the Pii repository from GitHub:
+
+   ```bash
+   git clone https://github.com/yourusername/pii.git
+   cd pii
+   ```
+
+2. **Create a Virtual Environment:**
+
+   Create and activate a Python virtual environment:
+
+   ```bash
+   python3 -m venv pii-env
+   source pii-env/bin/activate
+   ```
+
+3. **Install Dependencies:**
+
+   Install the necessary Python libraries:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Set Up the Database:**
+
+   If using PostgreSQL, configure your database settings in `config.py` and create the necessary tables:
+
+   ```python
+   # config.py
+   DATABASE_URI = 'postgresql://username:password@localhost:5432/pii_db'
+   ```
+
+   Run the setup script:
+
+   ```bash
+   python setup_db.py
+   ```
+
+5. **Build and Run Docker Container:**
+
+   To containerize Pii:
+
+   ```bash
+   docker build -t pii-app .
+   docker run -p 5000:5000 pii-app
+   ```
+
+6. **Deploy to the Cloud:**
+
+   For cloud deployment, push your Docker image to a registry (e.g., Docker Hub) and deploy using a service like AWS Elastic Beanstalk.
+
+---
+
+## **4. Getting Started**
+
+### **Initial Configuration**
+
+Once Pii is installed, you need to configure the environment and initialize any necessary databases. This setup involves:
+
+1. **Configuring API Endpoints:**
+
+   Define the base URL and API key for accessing external services or integrating with other platforms.
+
+2. **Setting Up the Environment Variables:**
+
+   Create a `.env` file in your project root with environment-specific settings like database credentials, API keys, and secret keys.
+
+3. **Running Initial Scripts:**
+
+   If required, run initialization scripts to populate the database with any default data or to prepare the environment for first-time use.
+
+### **Running the Application**
+
+To start Pii, simply run the following command:
+
+```bash
+python app.py
+```
+
+Alternatively, if you are using Docker, start your container:
+
+```bash
+docker run -p 5000:5000 pii-app
+```
+
+Access the application through your browser at `http://localhost:5000`.
+
+---
+
+## **5. Using Pii**
+
+### **Overview of Functions**
+
+Pii provides a user-friendly interface and API endpoints to manage legal documents efficiently. Key functionalities include:
+
+1. **Adding Legal Documents:**
+   - Upload legal documents via the UI or through API endpoints.
+   - Store documents in a structured database for easy retrieval.
+
+2. **Searching Legal Documents:**
+   - Perform keyword-based searches across the entire database.
+   - Filter results based on specific criteria like case type, jurisdiction, or date.
+
+3. **Generating Summaries:**
+   - Automatically generate summaries of legal documents.
+   - Customize the length and detail of summaries according to user needs.
+
+4. **Interfacing with the API:**
+   - Use the RESTful API to integrate Pii with other legal tech solutions.
+   - Endpoints are available for adding documents, retrieving summaries, and searching.
+
+---
+
+## **6. Advanced Features**
+
+### **Customizing the Model**
+
+Pii's NLP models are highly customizable:
+
+1. **Model Fine-Tuning:**
+   - Fine-tune the existing models on domain-specific legal datasets.
+   - Use frameworks like Hugging Face Transformers to implement model updates.
+
+2. **Adding Custom Pipelines:**
+   - Create custom NLP pipelines for specialized tasks such as named entity recognition (NER) or contract analysis.
+   - Integrate these pipelines into the existing Pii framework.
+
+### **Database Integration**
+
+Pii uses PostgreSQL for persistent storage of legal documents and related metadata:
+
+1. **Advanced Querying:**
+   - Utilize SQL queries for complex searches and data retrieval.
+   - Implement indexing and optimization techniques to enhance performance.
+
+2. **Data Backup and Restoration:**
+   - Regularly back up your database using PostgreSQL's native tools.
+   - Restore data quickly in case of any system failures.
+
+### **Using Docker for Deployment**
+
+Containerization with Docker simplifies the deployment of Pii:
+
+1. **Creating Docker Images:**
+   - Customize your Dockerfile to include all necessary dependencies.
+   - Use multi-stage builds to minimize image size and improve security.
+
+2. **Deploying on Cloud Platforms:**
+   - Push your Docker image to a cloud registry like Docker Hub.
+   - Deploy on AWS, Google Cloud, or Azure using their respective orchestration services.
+
+---
+
+## **7. Troubleshooting**
+
+### **Common Issues**
+
+- **Application Fails to Start:**
+  - Check for missing dependencies or incorrect configurations in the `.env` file.
+  - Review the application logs for specific error messages.
+
+- **Database Connection Errors:**
+  - Verify the connection string in `config.py`.
+  - Ensure that your PostgreSQL server is running and accessible.
+
+- **API Not Responding:**
+  - Confirm that the Flask server is running without errors.
+  - Test API endpoints using tools like Postman to diagnose issues.
+
+### **Debugging Tips**
+
+- **Use Python's Built-In Debugger (pdb):**
+  - Insert breakpoints in your code to step through and inspect variable states.
+
+- **Log Everything:**
+  - Implement comprehensive logging throughout your application using Python's logging module.
+
+- **Check Dependencies:**
+  - Ensure that all installed libraries are compatible with your Python version.
+
+---
+
+## **8. Future Plans: Pii 2.0**
+
+### **Research-Oriented Features**
+
+Pii 2.0 will extend the capabilities of the current Pii platform to support research tasks across various domains:
+
+1. **Text Summarization and Synthesis:**
+   - Enhanced NLP models will summarize research papers and generate comprehensive reviews.
+   - The synthesis feature will enable the aggregation of insights from multiple papers into a cohesive summary.
+
+2. **Advanced Search and Filtering:**
+   - Implement sophisticated search algorithms tailored to research literature, including semantic search and citation tracking.
+   - Filters will allow users to sort results by impact factor, publication date, and author prominence.
+
+3. **Collaborative Research Tools:**
+   - Pii 2.0 will include features for collaborative document editing and annotation, making it easier for research teams to work together.
+
+### **Planned Enhancements**
+
+1. **Multi-Language Support:**
+   - Adding support for processing legal and research documents in multiple languages.
+
+2. **AI-Driven Recommendations:**
+   - Introduce machine learning algorithms that suggest related documents and studies based on user activity and document content.
+
+3. **Integration with Research Databases:**
+   - Seamless integration with popular research databases like PubMed, IEEE Xplore, and arXiv for direct
