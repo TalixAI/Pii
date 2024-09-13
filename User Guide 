@@ -98,51 +98,39 @@ Pii is an advanced AI language model designed to assist legal professionals with
 
    Open your terminal and clone the Pii repository from GitHub:
 
-   ```bash
    git clone https://github.com/talix-ai/pii.git
    cd pii
-   ```
 
 2. **Create a Virtual Environment:**
 
    Create and activate a Python virtual environment:
 
-   ```bash
    python3 -m venv pii-env
    source pii-env/bin/activate
-   ```
 
 3. **Install Dependencies:**
 
    Install the necessary Python libraries:
 
-   ```bash
    pip install -r requirements.txt
-   ```
 
 4. **Set Up the Database:**
 
    If using PostgreSQL, configure your database settings in `config.py` and create the necessary tables:
 
-   ```python
    # config.py
    DATABASE_URI = 'postgresql://username:password@localhost:5432/pii_db'
-   ```
 
    Run the setup script:
 
-   ```bash
    python setup_db.py
-   ```
 
 5. **Build and Run Docker Container:**
 
    To containerize Pii:
 
-   ```bash
    docker build -t pii-app .
    docker run -p 5000:5000 pii-app
-   ```
 
 6. **Deploy to the Cloud:**
 
@@ -172,15 +160,11 @@ Once Pii is installed, you need to configure the environment and initialize any 
 
 To start Pii, simply run the following command:
 
-```bash
 python app.py
-```
 
 Alternatively, if you are using Docker, start your container:
 
-```bash
 docker run -p 5000:5000 pii-app
-```
 
 Access the application through your browser at `http://localhost:5000`.
 
